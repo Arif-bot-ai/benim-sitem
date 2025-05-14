@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mənim haqqımda</title>
+    <style>
+        body {
+            background-color: #1d1d1d;
+            background-image: url('https://www.example.com/arka-plan.jpg');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgba(26, 26, 26, 0.7);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #ff00ff;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .content {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+        }
+
+        .content h2 {
+            color: #00ffff;
+            font-size: 2em;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        button {
+            background-color: #00ffff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #ff00ff;
+            color: white;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #00ffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .content {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mənim haqqımda</h1>
+        <p>Mənim haqqımda maraqlı məlumatlar əldə edə bilərsiniz.</p>
+    </header>
+
+    <div class="content">
+        <h2>Salam mən Arif Akundzada</h2>
+        <p>Mən robot mühəndisi olmaq istəyirəm. Artıq buna yaxınam çünki Bakıdada, Antalyadada qalib gəldik və Estoniyaya gedəcəyik. Amma məni daha yaxşı yerə, Çinə çağırırlar.</p>
+
+        <h2>Bacarıqlarım və yoxlanışlarım</h2>
+        <ul>
+            <li>Unity ilə oyun gəlişdirmə</li>
+            <li>HTML, CSS, JavaScript ilə web tasarımı</li>
+            <li>Oyun yaratmaq</li>
+        </ul>
+
+        <h2>Mənimlə əlaqə:</h2>
+        <!-- Formsubmit ile entegre form -->
+        <form action="https://formsubmit.co/arif.akhundzade@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+            <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea>
+            <!-- Spam koruması için bot alanı -->
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Mesajı Gönder</button>
+        </form>
+
+        <div id="formResponse" style="color: #ff00ff; margin-top: 20px;">
+            Mesaj göndərdikdən sonra Gmail-inizi yoxlayın. İlk dəfədirsə, doğrulama bağlantısına tıklamalısınız.
+        </div>
+    </div>
+
+    <footer>
+        <p>Mənimlə əlaqə:</p>
+        <a href="mailto:arif.akhundzade@gmail.com">E-posta</a>
+        <a href="https://twitter.com/username" target="_blank">Twitter</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
